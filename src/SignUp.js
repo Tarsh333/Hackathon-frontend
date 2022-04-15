@@ -22,7 +22,6 @@ const Signup = ({setIsLoggedIn}) => {
         }
         else {
             localStorage.setItem('token', result?.token)
-            localStorage.setItem('following', JSON.stringify(result?.following))
             setIsLoggedIn(true)
         }
         setLoading(false)
@@ -33,7 +32,7 @@ const Signup = ({setIsLoggedIn}) => {
     }
     return (
         <div>
-            <h1 align="center" className="my-5">Signup</h1>
+            <h1 align="center" >Signup</h1>
 
             <form  onSubmit={handleSubmit}>
                     <input type="text" placeholder="Enter name" required={true} onChange={formControl} name="name" />
@@ -42,11 +41,11 @@ const Signup = ({setIsLoggedIn}) => {
                     <input type="text" placeholder="Enter address" required={true} onChange={formControl} name="address" />
 
                     <input type="password" placeholder="Password" required={true} onChange={formControl} name="password" />
-                <button variant="primary" type="submit" disabled={loading}>
+                <button type="submit" disabled={loading}>
                     {loading?"Loading...":"Submit"}
                 </button>
             </form>
-            <div className="mt-4"></div>  <Link to="/login">Already Have an account? Login</Link>
+            <div ><Link to="/login">Already Have an account? Login</Link></div>  
         </div>
     )
 }

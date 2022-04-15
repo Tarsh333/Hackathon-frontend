@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import {AiOutlineSearch} from 'react-icons/ai'
 const Nav = ({ isLoggedIn }) => {
     return (
+        <div>
         <nav>
             <div className='logo'><Link to="/">OLA</Link></div>
             <div className='search'><AiOutlineSearch/>
@@ -18,6 +19,24 @@ const Nav = ({ isLoggedIn }) => {
             <Link to='/cart'>Cart</Link>
                 </div>
         </nav>
+        <div className='categories'>
+            <div>
+                Electronics
+            </div>
+            <div>
+                Vehicles
+            </div>
+            <div>
+                Mobile Phones
+            </div>
+            <div>
+                Furniture
+            </div>
+            <div>
+                Books
+            </div>
+        </div>
+        </div>
     )
 }
 

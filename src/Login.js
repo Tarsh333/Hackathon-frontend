@@ -24,13 +24,12 @@ const Login = ({setIsLoggedIn}) => {
         }
         else {
             localStorage.setItem('token', result?.token)
-            localStorage.setItem('following', JSON.stringify(result?.following))
             setIsLoggedIn(true)
         }
         setLoading(false)
     }
     return (
-        <div>
+        <div className="login">
             <h1 align="center" className="my-5">Login</h1>
 
             <form onSubmit={handleSubmit}>

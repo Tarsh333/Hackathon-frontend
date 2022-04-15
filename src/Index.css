@@ -1,21 +1,22 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 nav {
+    color: white!important;
+    background-color: black;
   display: flex;
   padding: 8px;
-  background-color: white;
   font-size: 25px;
   align-items: center;
   font-weight: bolder;
   justify-content: space-between;
-  box-shadow: rgba(0,0,0,0.09) 0px 2px 24px 0px;
 }
 a {
-  color: black;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 nav .logo {
     margin: 0px 10px;
@@ -27,7 +28,7 @@ nav .logo a{
 }
 nav a {
     margin: 0px 10px;
-  font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 nav input{
     padding: 9px 0px 9px 35px;
@@ -43,4 +44,22 @@ nav .search svg{
 nav .search{
     width: 40%;
     position: relative;
+}
+.login{
+    width: 70%;
+    margin: auto;
+    max-width: 700px;
+    margin-top: 20px;
+    color: black;
+    background-color: #F0F0F0;
+}
+.categories{
+    box-shadow: rgba(0,0,0,0.09) 0px 2px 24px 0px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: 900;
 }
